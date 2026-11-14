@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto de jogo em TypeScript</title>
+  </head>
+  <body>
+    <main class="layout">
+      <header>
+        <p class="referencia" id="referencia"></p>
+        <h1 id="titulo"></h1>
+        <p id="descricao"></p>
+      </header>
+      <div class="bancada">
+        <section class="jogo" aria-label="Área de jogo">
+          <canvas id="jogo" aria-label="Tabuleiro do jogo"></canvas>
+        </section>
+        <aside>
+          <section class="quadro">
+            <div class="linha"><h2>Partida</h2><span id="situacao"></span></div>
+            <dl id="indicadores"></dl>
+            <p id="mensagem" role="status" aria-live="polite"></p>
+            <button id="reiniciar" type="button">Reiniciar <kbd>R</kbd></button>
+          </section>
+          <section class="quadro">
+            <h2>Controles</h2>
+            <dl id="controles"></dl>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
