@@ -44,11 +44,15 @@ export class Bola {
 
 
     moverbola(direcao: number, dt: number): void {
+      
       this.x = limitar(this.x + direcao * 420 * dt, 0, LARGURA );
       this.y = limitar(this.y + direcao * -420 * dt, 0, ALTURA );
-      if(this.x >= 500){
-        direcao *=-1
+      if(this.x >= LARGURA ){
+          this.x = limitar(this.x + -direcao * -420 * dt, 0, LARGURA );
+          this.y = limitar(this.y + direcao * 420 * dt, 0, ALTURA );
       }
+
+
   }
   
 
