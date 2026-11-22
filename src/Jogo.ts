@@ -1,6 +1,8 @@
 // Base da atividade. Este objeto coordena o protótipo. Continue pelas etapas do card do jogo.
 
-import { montarBlocos, Raquete , Bola } from "./Dominio.ts";
+import { montarBlocos } from "./Dominio.ts";
+import {Raquete} from "./Retangulo.ts";
+import {Bola} from "./Bola";
 import type { Cena } from "./telaDoJogo.ts";
 import { acionada, type Comandos, type EstadoGeral } from "./tipos.ts";
 

@@ -1,9 +1,10 @@
 // Camada de apresentação. Use os dados recebidos para desenhar e informe os controles na ficha do
 // jogo.
 
-import { ALTURA, LARGURA, RAIO } from "./Dominio.ts";
-import type { IBola } from "./Dominio.ts";
-import type { Retangulo } from "./Dominio.ts";
+
+import type { Bola } from "./Bola.ts";
+import type { Retangulo } from "./Retangulo.ts";
+import { ALTURA, LARGURA, RAIO } from "./Retangulo.ts";
 import type { FichaJogo } from "./tipos.ts";
 
 export const ficha: FichaJogo = {
@@ -16,7 +17,7 @@ export const ficha: FichaJogo = {
 
 export interface Cena {
   raquete: Retangulo;
-  bola: IBola;
+  bola: Bola;
   blocos: { area: Retangulo; resistencia: number }[];
 }
 
