@@ -65,6 +65,7 @@ function quadro(tempo: number): void {
   } else {
     jogo.atualizar(dt, comandos);
   }
+
   // O desenho recebe os dados da partida. Ele pode mostrar posição, pontos e vidas sem alterar as
   // regras.
   const estado = jogo.obterEstado();

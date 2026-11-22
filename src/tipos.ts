@@ -33,3 +33,4 @@ export function limitar(valor: number, minimo: number, maximo: number): number {
 export function acionada(teclas: ReadonlySet<string>, ...opcoes: string[]): boolean {
   return opcoes.some((tecla) => teclas.has(tecla));
 }
+

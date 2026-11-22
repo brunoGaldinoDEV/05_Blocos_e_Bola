@@ -3,7 +3,7 @@
 
 
 import type { Bola } from "./Bola.ts";
-import type { Retangulo } from "./Retangulo.ts";
+import type { IRetangulo } from "./Retangulo.ts";
 import { ALTURA, LARGURA, RAIO } from "./Retangulo.ts";
 import type { FichaJogo } from "./tipos.ts";
 
@@ -16,9 +16,9 @@ export const ficha: FichaJogo = {
 };
 
 export interface Cena {
-  raquete: Retangulo;
+  raquete: IRetangulo;
   bola: Bola;
-  blocos: { area: Retangulo; resistencia: number }[];
+  blocos: { area: IRetangulo; resistencia: number }[];
 }
 
 export function desenhar(ctx: CanvasRenderingContext2D, cena: Cena): void {
